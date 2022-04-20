@@ -120,9 +120,9 @@
     $colors = array("Green", "Blue", "Red", "Yellow");
     sort($colors);
     print_r($colors);
-
+    echo "<br><br>";
     // Assignment 5: Write a PHP function that checks whether a person is eligible to vote.
-    
+
 
 
 
@@ -136,6 +136,12 @@
 
     // Arrays \\
     // Assignment 1: Write a script which will display the following string
+    $color = array("white", "green", "red", "blue", "black");
+    echo "The memory of that scene for me is like a frame of film forever frozen at that moment: the " . $color[2] . " carpet, <br>
+    the " . $color[1] . " lawn, the " . $color[0] . " white house, the leaden sky. The new president and his first lady. - Richard M. Nixon";
+    echo "<br>";
 
+    // Assignment 2: Write a PHP script which will display the colors in the following way
+    
 
 ?>
