@@ -1,11 +1,76 @@
 <?php 
     //  Loops \\
     //  Assignment 1: Create a script that displays 1-2-3-4-5-6-7-8-9-10 on one line. There will be no hyphen(-) at starting and ending position.
-    
+    for ($x= 1; $x <= 10; $x++){
+        if ($x < 10){
+            echo "$x-";
+        }
+        else {
+            echo "$x" . "\n";
+        }
+    }
+    echo "<br><br>";
+
+    // Assignment 2: Create a script using a for loop to add all the integers between 0 and 30 and display the total.
+    $total = 0;
+    for ($x = 1; $x <= 30; $x++){
+        $total += $x;
+    }
+    echo "Total: " . $total;
+    echo "<br><br>";
+
+    // Assignment 3: Create a script to construct the following pattern, using nested for loop.
+    for($row = 1; $row <= 5; $row++){
+        for ($star = 1; $star <= $row; $star++){
+            echo "*";
+        }
+        echo "<br>";
+    }
+    echo "<br>";
+
+    // Assignment 4: Create a script to construct the following pattern, using a nested for loop.
+    $n = 5;
+    for ($x = 1; $x <= $n; $x++){
+        for ($j = 1; $j <= $x; $j++){
+            echo "*";
+        }
+        echo "<br>";
+    }
+    for ($x = $n; $x >= 1; $x--){
+        for ($j = 1; $j <= $x; $j++){
+            echo "*";
+        }
+        echo "<br>";
+    }
+    echo "<br>";
+
+    // Assignment 5: Write a PHP script using nested for loop that creates a chess board as shown below. Use table width="270px" and take 30px as cell height and width.
+?>
+    <table width = "400px" cellspacing = "0px" cellpadding = "0px" border = "1px">
+        
+<?php
+    for ($row = 1; $row <= 8; $row++){
+        echo "<tr>";
+        for ($column = 1; $column <=8; $column++){
+            $total = $row+$column;
+            if ($total % 2 == 0){
+                echo "<td height= 35px widht= 30px bgcolor= #FFFFFF></td>";
+            }
+            else {
+                echo "<td height= 35px width= 30px bgcolor= #000000></td>";
+            }
+        }
+        echo "</tr>";
+    }    
+?>
+    </table>
 
 
+<?php
     // Functions \\
     // Assignment 1: Write a function to check whether a number is prime or not.
+    echo "<br>";
+
     function primeCheck($num){
         if ($num == 1)
         return 0;
@@ -49,7 +114,28 @@
     
     echo "String is lowercase: "; 
     var_dump(lowercaseCheck($stringCheck));
+    echo "<br><br>";
 
     // Assignment 4: Write a function to sort an array.
+    $colors = array("Green", "Blue", "Red", "Yellow");
+    sort($colors);
+    print_r($colors);
+
+    // Assignment 5: Write a PHP function that checks whether a person is eligible to vote.
     
+
+
+
+
+
+
+
+
+
+
+
+    // Arrays \\
+    // Assignment 1: Write a script which will display the following string
+
+
 ?>
